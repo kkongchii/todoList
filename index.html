@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">To do List!</div>
+    </div>
+    <div class="container" id="input">
+        <p id="description">
+            할일을 아래 박스에 입력해주세요.
+        </p>
+        <form action="" method="get" class="form-input">
+            <div class="form-task">
+                <label for="name">Enter your task: </label>
+                <input type="text" name="task" id="task">
+            </div>
+            <button class="submitbtn">
+                Submit!
+            </button>
+        </form>
+    </div>
+    <div class="container">
+        <div id="todoList">
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+body{
+    box-sizing: border-box;
+    background-color: #fff9d6;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    line-height: 140px;
+    border-radius: 30px;
+    background-color: #CFFFE5;
+    height: 140px;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+#input{
+    border-radius: 30px;
+    padding: 3px;
+    margin-top: 30px;
+    position: relative;
+    width: 80%;
+    background-color: #f7edb3;
+}
+
+#description{
+    display: block;
+    position: relative;
+    left: 10%;
+    font-size: 2rem;
+    font-family: 'Jua', sans-serif;
+    font-weight: 500;
+}
+
+.form-input{
+    position: relative;
+    left: 10%;
+    font-family: 'Jua', sans-serif;
+}
+
+.submitbtn{
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#todoList{
+    background-color: #f7edb3;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    margin-top: 50px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detailTask{
+    position: relative;
+    left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.taskName{
+    margin-left: 5px;
+    font-family: 'Jua', sans-serif;
+}
+
+.deleteButton{
+    margin-left: 20px;
+}
