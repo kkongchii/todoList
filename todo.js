@@ -26,7 +26,9 @@ todoForm.addEventListener('submit', event => {
     detailTask.appendChild(deleteButton);
     todo.appendChild(detailTask );
 
-
+    document.getElementById("task").value = null;
+    // document.getElementById("task").focus = null;
+    
     checkbox.addEventListener('change', event =>{
         if(checkbox.checked){
             taskName.style.textDecorationLine = "line-through"
