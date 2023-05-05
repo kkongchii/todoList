@@ -7,6 +7,10 @@ const todoInput = document.querySelector("#taskInput");
 
 function addTask(event){
     event.preventDefault();
+    if(todoInput.value == ''){  
+        alert("할 일을 입력해주세요!");
+        return;
+    }
     let taskNum = 0;
     while(true){
         if (localStorage.getItem(`task${taskNum}`) == null)
@@ -19,6 +23,7 @@ function addTask(event){
     taskObject["id"] = `task${taskNum}`;
     localStorage.setItem(`task${taskNum}`, JSON.stringify(taskObject));
     printTask(taskObject);
+    todoInput.value = null;
 }
 
 function changeCheck(event){
